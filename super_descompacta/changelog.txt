@@ -1,0 +1,22 @@
+# 1.00.06 (19/10/2012)
+- Adicionada a filial 'ADMINISTRATIVO'.
+
+# 1.00.05 (19/10/2012)
+- Alterado 'TAREFA.BAT' para executar por padrão o processo 'COMPLETO'.
+- Adicionada opção de processo 'ESTOQUE'.
+
+# 1.00.04 (08/08/2012)
+- Adicionada a filial 'BH'
+- Adicionada a filial 'PIRA'
+
+# 1.00.03 (02/05/2012)
+- Adicionada a filial 'FSANTANA'.
+
+# 1.00.02 (27/04/2012)
+- Adicionada a filial 'CAXIAS'.
+
+# 1.00.01 (14/03/2012)
+- Adicionada a filial 'LAPA'.
+
+# 1.00.00 (09/03/2012)
+- Primeira revisão.

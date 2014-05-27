@@ -1,0 +1,32 @@
+# 1.00.08 (11/02/2014)
+- Adicionado configurações e cópia de log para Servidor STORAGE
+
+# 1.00.07 (28/11/2012)
+- Adicionada rotina 'exec_indxluiz'
+- Adicionada rotina 'exec_tpindexa'
+
+# 1.00.06 (27/11/2012)
+- Adicionado item 'LIBSENHA.DBF' ao arquivo 'precodrd.lst'
+
+# 1.00.05 (25/10/2012)
+- Removido ALT_FABR do DISCOJ. Pedido: LUIZ 
+
+
+# 1.00.04 (24/07/2012)
+- Adicionado item 'SEGCOML.DBF' ao arquivo 'precodrd.lst'
+
+# 1.00.04 (26/03/2012)
+- Rotina 'REPRES2' reativada.
+
+# 1.00.03 (14/03/2012)
+- Rotina 'REPRES2' desativada. (Qlikview calcula devolução)
+
+# 1.00.02 (09/03/2012)
+- Alterado prefixo do processo de 'SMA' para 'MA'.
+- Diretório 'libs' foi renomeado para 'lib'.
+
+# 1.00.01 (02/03/2012)
+- Alterada váriavel de data: %date:~-10%
+
+# 1.00.00 (17/01/2012)
+- Primeira revisão.

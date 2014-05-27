@@ -1,0 +1,16 @@
+#Filial
+filial_code=87
+filial_display=BAURU
+
+#SVN
+filial_svn=bauru
+svn_username=skbauru
+svn_password=agtb87$r
+
+#Diretorios
+# -> Informar nome no formato curto (DOS)
+dir_dados=f:\dados\
+dir_fontes=f:\fontes\
+dir_bkp=f:\bkpsm\
+dir_bkp_local=c:\bkpsm\
+dir_svn=f:\svn\

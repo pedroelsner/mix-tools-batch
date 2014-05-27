@@ -1,0 +1,160 @@
+# 1.03.01 (09/04/2014)
+- Adicionado processo "madruga_qlikview.bat"
+
+# 1.03.00 (17/12/2013)
+- Alterada variável bkp_dia_dados_extensions para *.*
+
+# 1.02.35 (16/10/2013)
+- Desativada execução do IMPPRECO na filial 43
+
+# 1.02.34 (10/09/2013)
+- Executa IMPPRECO apenas quando executado na filial 43
+
+# 1.02.33 (19/08/2013)
+- Executa KILL USER no inicio do processo "completo"
+
+# 1.02.32 (19/08/2013)
+- Executa ATUPRECO antes de compactar e enviar (svn)
+
+# 1.02.31 (01/08/2013)
+- Executa ENVTRANF antes de compactar e enviar (svn)
+
+# 1.02.30 (23/05/2013)
+- Alterada a forma de renomear os arquivos compactados
+
+# 1.02.29 (30/04/2013)
+- Adicionado arquivo 'DEALER.DBF' em 'config\completo\compacta.lst'
+
+# 1.02.28 (08/01/2013)
+- Apagar arquivo 'LIBSENHA.NTX' após executar 'ATUPRECO.BAT' - Pedido: LUIZ
+
+# 1.02.27 (26/12/2012)
+- Removido processo 'ESTOQUE'.
+
+# 1.02.26 (10/12/2012)
+- Adicinado arquivo 'PRODUTOS.DBF' em 'config\completo\compacta.lst'.
+
+# 1.02.25 (26/10/2012)
+- Removido processo ALT_FABR. Pedido: Luiz
+- Adicionado processo paralelo MADRUGA ESTOQUE após ATUPRECO.
+
+# 1.02.24 (19/10/2012)
+- Adicionado o nome do processo na criação do PID.
+- Adicionado processo: ESTOQUE
+
+# 1.02.23 (08/10/2012)
+- Revisado/Atualizado documento: \doc\Instalação.docx
+
+# 1.02.22 (19/09/2012)
+- Adicionado aplicativo 'LOG.BAT': Exibe log resumido
+
+# 1.02.21 (26/07/2012)
+- Removido parâmetro "70" na execução do 'REINDEXA.EXE' - Recomendado: LUIZ
+
+# 1.02.20 (25/07/2012)
+- Apagar arquivo 'SEGCOML.NTX' após executar 'ATUPRECO.BAT' - Pedido: LUIZ
+
+# 1.02.19 (06/06/2012)
+- Adicionados os arquivos 'sk.add, sk.ai, sk.am' em 'config\completo\bkp_dados.lst'. - Pedido: ALDO
+
+# 1.02.18 (22/05/2012)
+- Adicionado arquivo 'CLIVENDA.DBF' em 'config\completo\compacta.lst'.
+
+# 1.02.17 (10/05/2012)
+- Criado diretório 'ERRO' dentro de '\LOG'.
+- Adicionada função global 'SAVE_ERROS_PRO'.
+
+# 1.02.16 (09/05/2012)
+- Adicionada função global 'CHECK_EXEC_ERROR'.
+- Editada função 'exec_svn' de 'MADRUGA.BAT' para abrir em outra janela - processo paralelo.
+- Adicionado GOTO 'CHECK_PARALLEL_PROCESSES' e 'WAIT_RETRY_PARALLEL_PROCESSES'.
+
+# 1.02.15 (12/04/2012)
+- Criada função global 'DELETE_FILE'.
+- Adicionado arquivo 'ESTDIVER.DBF' em 'config\completo\compacta.lst'.
+
+# 1.02.14 (11/04/2012)
+- Criada função global 'MAKE_DIR': Cria um diretório específico.
+
+# 1.02.13 (09/03/2012)
+- Alterada opção de processo 'qlikview' para 'teste'.
+
+# 1.02.12 (02/03/2012)
+- Alterada váriavel de data: %date:~-10%
+
+# 1.02.11 (03/02/2012)
+- Adicionado arquivo 'CADCPB*' em 'config\completo\compacta.lst'.
+- Adicionado arquivo 'CADTCC*' em 'config\completo\compacta.lst'.
+
+# 1.02.10 (27/01/2012)
+- Alterada variavel 'svn_connection' para 'svn_connection_filial'.
+- Adicionado aplicativo 'ATUPRECO.BAT' responsável por receber o arquivo 'PRECODRD.ACE' e executar o 'ATUPRECO.EXE'.
+
+# 1.02.09 (13/01/2012)
+- Adicionada a função global 'CHECK_EXEC_TODAY': verifica a execução da função no dia corrente.
+
+# 1.02.08 (09/01/2012)
+- Adicionada a função global 'WAIT_SECONDS'.
+- Adicionada verificação no arquivo 'ATUPRECO.OK' na execução do 'ATUPRECO.EXE'.
+
+# 1.02.07 (05/01/2012)
+- Adicionada a função global 'DELETE_DIR'.
+- Adicionada a função 'CHECKOUT_SVN' ao arquivo 'SVN_ATUALIZA.BAT'.
+
+# 1.02.06 (21/12/2011)
+- Alterada a função global 'KILL_USER': adicionado parâmetro 'path'.
+
+# 1.02.05 (20/12/2011)
+- Não grava log de erro para rotina já em execução.
+
+# 1.02.04 (08/12/2011)
+- Alterada a função 'compacta': Verfifica os arquivos criados após a compactação.
+- Alterado função global 'MAKE_PID': Não grava log em caso de processo já em execução.
+
+# 1.02.03 (28/11/2011)
+- Adicionado campo contendo variável 'filial_svn' no arquivo de log.
+- Adicionada função global 'MAKE_PID_PROCESS'.
+- Adicionado campo cantendo variável 'pid_process' no arquivo de log.
+- Alterado documento 'Instalação na Filial.docx'.
+
+# 1.02.02 (24/11/2011)
+- Adicionado parâmetro de 'BKP.BAT' somente local.
+- Alterado parâmetro de 'SVN_ATUALIZA.BAT': 'error' para 'log'.
+- Removido parâmetro 'display' da função global 'NOLOG_COPY_FILES'.
+
+# 1.02.01 (23/11/2011)
+- Adicionada a função 'delete_svn' em 'SVN_ATUALIZA.BAT'.
+- Altera a função 'add_svn' em 'SVN_ATUALIZA.BAT': Depois de adicionar envia o arquivo.
+- Removida a função 'commit_svn' em 'SVN_ATUALIZA.BAT'.
+- 'COMPACTA.BAT' não apaga arquivos do diretório 'dir_svn'.
+- 'MADRUGA.BAT' não copia arquivo de log para 'dir_svn' no fim da execução.
+- Mudança completa na estrutura do aplicativo 'SVN_ATUALIZA.BAT'.
+
+# 1.02.00 (18/11/2011)
+- Adicionada rotina para atualização da aplicação em 'TAREFA.BAT'.
+- Adicionado aplicativo 'TAREFA.BAT' para execução nas filiais.
+
+# 1.01.01 (18/11/2011)
+- Arquivo de configuração 'app.ini' foi dividido em dois: 'app.ini' e 'filial.ini'.
+- Removido parâmetro 'requris_files' da função global 'CHECK_COPIED_FILES'.
+- Renomeada pasta 'Libs' para 'Lib'.
+- Alterado conteúdo da váriavel 'rar_files' para '[all].r[?][?]'.
+
+# 1.01.00 (17/11/2011)
+- Alterada função 'compacta': Identifica novas partes para arquivos '*.RAR'.
+- Substituido o comando 'RAR' por 'RAR32': compatibilidade com OS 64bits.
+- Todas as chamadas '%lib_x%' foram desativadas.
+
+# 1.00.02 (17/11/2011)
+- Todos os comandos 'CAT' foram substituídos por 'TYPE'.
+- Atualizada função 'update_svn' do arquivo 'svn_atualiza.bat': Inseridos comandos 'UPGRADE' e 'CLEANUP'.
+
+# 1.00.01 (16/11/2011)
+- Alterada função de inicialização de diretórios.
+- Corrigido tempo de espera no reenvio do SVN para 15 minutos.
+- Adicionada função global 'LOAD_CONFIG'.
+- Alterada função global 'CHECK_APP_OPTION': não gera log.
+- Adicionada função global 'FATAL_ERROR'.
+
+# 1.00.00 (14/11/2011)
+- Primeira revisão.
