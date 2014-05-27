@@ -1,0 +1,27 @@
+@echo off
+set "gempro_app=wace104"
+set "gempro_path=C:\Program Files (x86)\PROJAC104"
+set "gempro_wace_path=C:\inetpub\wwwroot"
+set "server_path=C:\PROLOGOS\ATUALIZE"
+set "server_plsql_path=%server_path%\%gempro_app%"
+set "server_plsql_file=TOTAL.TRQ"
+
+:: Faz backup da pasta a aplicação
+if exist %gempro_wace_path%\%gempro_app%_old\nul (
+rmdir %gempro_wace_path%\%gempro_app%_old /S /Q
+)
+move "%gempro_wace_path%\%gempro_app%" "%gempro_wace_path%\%gempro_app%_old"
+
+:: Descompacta nova versão
+lib\unrar.exe x ..\%gempro_app%.rar %gempro_wace_path%
+
+:: Copia config
+copy "%gempro_wace_path%\%gempro_app%_old\web.config" "%gempro_wace_path%\%gempro_app%\"
+
+:: Move TOTAL.TRQ
+copy "%gempro_wace_path%\%server_plsql_file%" "%gempro_path%\"
+del "%gempro_wace_path%\%server_plsql_file%"
+
+:: Executa PLSQLBIGSK
+call "%gempro_path%\PLSQLBIGSK.EXE"
+move "%gempro_path%\PLSQLBIGSK??.LOG" .\log\

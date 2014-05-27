@@ -1,0 +1,20 @@
+# 1.00.05 (15/05/2014)
+- Ativado processo: estadotrq
+
+# 1.00.04 (09/05/2014)
+- Criado/Ativado processo: plsqlbigsk
+- Criado processo: estadotrq
+
+# 1.00.03 (08/05/2014)
+- Criado/Ativado processo: filialtrq
+
+# 1.00.02 (06/05/2014)
+- Ativado processo: atualiza_permissao
+
+# 1.00.01 (28/04/2014)
+- Criado processo: atualiza_permissao
+- Alterado arquivo filial.ini (muitas variáveis foram adicionadas)
+- Adicionado controle de execução para filiais 00 e 36
+
+# 1.00.00 (06/03/2014)
+- Primeira revisão.

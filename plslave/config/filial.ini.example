@@ -1,0 +1,16 @@
+# Filial
+filial_code=01
+filial_display=DOURADOS
+filial_uf=MS
+
+# SVN
+filial_svn=pl001
+filial_svn_username=pl001
+filial_svn_password=agtb001$r
+
+# Diretorios
+dir_projac104=C:\PROGRA~2\PROJAC104
+dir_atualize=C:\PROLOGOS\ATUALIZE
+
+# Arquivos
+file_plsql=TOTAL.TRQ

@@ -1,6 +1,6 @@
 # Mix Tools Batch
 
-Coletânia de rotinas desenvolvidas em Batch utilizados para atualização do sistema Clipper da SK Automotive
+Coletânia de rotinas desenvolvidas em Batch.
 
 ## Rotinas
 
@@ -8,6 +8,8 @@ Coletânia de rotinas desenvolvidas em Batch utilizados para atualização do si
 * SUPER_DESCOMPACTA
 * SUPER_MATRIZ
 * QLIKVIEW_DESCOMPACTA
+* PLSLAVE
+* PLMONITOR
 
 # Copyright e Licença
 
